@@ -1,14 +1,14 @@
-# GPS Gáttin App
+# Icelandic Met Office (IMO) Deformation Portal
 
 ## Instructions for Local Development Installation
 
 To get started, first clone this repo:
 ```
-git clone --branch main --single-branch git@git.vedur.is:aut/ut-dev/new-gps-brunnur-interface.git
+git clone git@github.com:mariafgg/deformation-portal.git
 ```
 Go to the current development version directory
 ```
-cd new-gps-brunnur-interface/site
+cd deformation-portal/site
 ```
 Create Virtual Environment:
 
