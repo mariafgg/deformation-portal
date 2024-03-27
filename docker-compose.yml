@@ -1,0 +1,35 @@
+version: '3.9'
+
+services:
+  site:
+    image: ${IMAGE_NAME}:${IMAGE_TAG}
+    networks:
+      - proxy
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    deploy:
+      replicas: $REPLICAS
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 60s
+      rollback_config:
+        parallelism: 1
+        delay: 15s
+        order: $ORDER
+      update_config:
+        parallelism: 1
+        delay: 15s
+        failure_action: rollback
+        order: $ORDER
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.${TRAEFIK_NAME}.entrypoints=$TRAEFIK_ROUTERS_ENTRYPOINTS"
+        - "traefik.http.routers.${TRAEFIK_NAME}.tls=$TRAEFIK_ROUTERS_TLS"
+        - "traefik.http.routers.${TRAEFIK_NAME}.rule=$TRAEFIK_ROUTERS_RULE"
+        - "traefik.http.services.${TRAEFIK_NAME}.loadbalancer.server.port=$TRAEFIK_SERVICES_PORT"
+
+networks:
+  proxy:
+    external: true

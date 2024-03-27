@@ -1,0 +1,45 @@
+.rc-slider-track {
+    background-color: blue !important;
+}
+
+.rc-slider-handle {
+    border: solid 2px blue !important;
+}
+.mapbox-content {
+    width: 100%;  /* Fallback for browsers that do not support vw */
+    height: 80%;  /* Fallback for browsers that do not support vh */
+}
+
+
+.download-button-enabled {
+  cursor: pointer;
+}
+
+.download-button-disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-top: 66.66%; /* 2:3 aspect ratio */
+}
+
+.map-container .leaflet-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* custom.css */
+.custom-popup .leaflet-popup-content {
+    width: auto !important; /* Allow content to define width */
+    min-width: 400px; /* Set a minimum width */
+    max-width: 600px; /* Set a maximum width if desired */
+}
+

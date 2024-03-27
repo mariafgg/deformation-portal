@@ -1,0 +1,14 @@
+dash==2.14.0
+gunicorn == 21.2.0
+plotly==5.17.0
+dash-bootstrap-components==1.5.0
+requests==2.31.0
+uvicorn==0.23.2
+dash-leaflet
+#sqlalchemy
+#pandas
+#psycopg2
+polars
+requests
+beautifulsoup4
+dash-dangerously-set-inner-html

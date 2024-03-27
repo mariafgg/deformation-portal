@@ -1,0 +1,167 @@
+body {
+    background-color: #121212; /* Dark background for the body */
+    color: #E0E0E0; /* Lighter text color for better readability on dark background */
+}
+
+.rc-slider-track {
+    background-color: #2196F3 !important; /* Brighter color for slider track to stand out on dark background */
+}
+
+.rc-slider-handle {
+    border: solid 2px #BB86FC !important; /* Using a purple accent color for slider handles */
+}
+
+.mapbox-content {
+    width: 100%;  /* Fallback for browsers that do not support vw */
+    height: 80%;  /* Fallback for browsers that do not support vh */
+    background-color: #121212; /* Ensuring the map background is also dark */
+}
+
+.download-button-enabled {
+    cursor: pointer;
+    background-color: #03DAC5; /* Using a teal accent color for enabled state */
+    color: #000; /* Dark text color for contrast */
+    border: none; /* Removing border */
+}
+
+.download-button-disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+    pointer-events: none;
+    background-color: #37474F; /* Darker shade for disabled state */
+    color: #BDBDBD; /* Light grey text */
+    border: none; /* Removing border */
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-top: 66.66%; /* 2:3 aspect ratio */
+    background-color: #121212; /* Dark background color for the map container */
+}
+
+.map-container .leaflet-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Customizing popup for Leaflet map to fit dark theme */
+.custom-popup .leaflet-popup-content {
+    width: auto !important; /* Allow content to define width */
+    min-width: 400px; /* Set a minimum width */
+    max-width: 600px; /* Set a maximum width if desired */
+    background-color: #333; /* Dark background for popups */
+    color: #E0E0E0; /* Light text color for readability */
+}
+
+/* Adjusting Leaflet popup tip color */
+.leaflet-popup-tip {
+    background: #333;
+}
+/* Custom dark theme for Dropdown components */
+.Select-control {
+    background-color: #333; /* Dark background */
+    color: #fff; /* Light text color */
+}
+
+.Select-menu-outer {
+    background-color: #333; /* Dark background for options list */
+    color: #fff; /* Light text color for options */
+}
+
+.VirtualizedSelectOption {
+    background-color: #333; /* Dark background for virtualized options */
+    color: #fff; /* Light text color for virtualized options */
+}
+
+.Select-option.is-focused {
+    background-color: #444; /* Slightly lighter background for focused option */
+}
+
+.Select-option.is-selected {
+    background-color: #555; /* Different background for selected option */
+}
+
+.Select-multi-value-wrapper {
+    background-color: #333; /* Dark background for selected option tags */
+    color: #fff; /* Light text color for selected option tags */
+}
+
+.Select-arrow-zone {
+    color: #fff; /* Light color for dropdown arrow */
+}
+
+.Select-clear-zone {
+    color: #fff; /* Light color for clear selection */
+}
+
+.Select-placeholder, .Select--single > .Select-control .Select-value {
+    color: #fff; /* Light text color for placeholder and selected value */
+}
+
+.custom-navbar {
+    background-color: #004c80 !important;
+}
+
+.custom-offcanvas-width {
+    width: 60% !important; /* Adjust the width as needed */
+}
+
+/* assets/style.css */
+.dash-loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.dash-loading-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dash-loading-component::after {
+  content: 'Loading...';
+  margin-top: 20px;
+  color: #000;
+  font-size: 20px;
+}
+
+/* assets/custom.css */
+.nav-tabs .nav-link {
+    color: #004c80 !important; /* Change the text color of the tab titles */
+}
+
+.nav-tabs .nav-link.active {
+    color: #fff !important; /* Optional: Change active tab text color */
+    background-color: #004c80 !important; /* Optional: Change active tab background color */
+    border-color: #004c80 !important; /* Optional: Change active tab border color */
+}
+
+.dash-loading-container {
+    cursor: progress; /* Change cursor to indicate loading */
+}
+
+.leaflet-popup-content {
+    width: 500px !important;  /* Adjust the width as needed */
+}
+
+/* Hide the default Dash "Loading..." message */
+._dash-loading {
+  visibility: hidden;
+}
+
+/* Optional: Custom loader styles */
+._dash-loading::after {
+  content: 'Loading...'; /* Custom text or leave as 'Loading...' */
+  visibility: visible;
+  display: inline-block;
+  color: black; /* Custom color */
+  text-align: center;
+  margin-top: 2rem;
+}
+
