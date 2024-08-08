@@ -1,7 +1,7 @@
 # Icelandic Met Office (IMO) Deformation Portal
 
 This application streams workflows from the Icelandic Meteorological office concerning surface measurements of volcano deformation and its modelling through deformation models in Iceland, currently more focused in the Reykjanes peninsula activity.
-
+You can browse this from the Dash Examples in the Geospatial section https://plotly.com/examples/geospatial/ 
 
 ## Instructions for Local Development Installation
 
